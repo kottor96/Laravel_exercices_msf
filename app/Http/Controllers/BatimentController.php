@@ -13,7 +13,8 @@ class BatimentController extends Controller
      */
     public function index()
     {
-        //
+        $batiments = Batiment::all();
+        return view('batimentPage',compact('batiments'));
     }
 
     /**

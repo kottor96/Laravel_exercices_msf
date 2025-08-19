@@ -13,7 +13,8 @@ class EleveController extends Controller
      */
     public function index()
     {
-        //
+        $eleves = Eleve::all();
+        return view('eleves',compact('eleves'));
     }
 
     /**
