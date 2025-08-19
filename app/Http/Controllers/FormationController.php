@@ -13,8 +13,8 @@ class FormationController extends Controller
      */
     public function index()
     {
-        $fomrations = Formation::all();
-        return view('formationPage',compact('formation'));
+        $formations = Formation::all();
+        return view('formationPage',compact('formations'));
     }
 
     /**

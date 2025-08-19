@@ -10,7 +10,8 @@
     <section>
         <div><h2>batiment</h2></div>
         <div>
-            <p>{{$formations[0]['nom']}} </p>
+            <p>{{$batiments[0]['nom']}} </p>
+            <p>{{$batiments[0]['description']}} </p>
         </div>
     </section>
 </body>
