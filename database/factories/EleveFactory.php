@@ -1,7 +1,6 @@
 <?php
 
 namespace Database\Factories;
-
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -14,9 +13,11 @@ class EleveFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
     public function definition(): array
     {
         return [
+            'nom' => fake()->lastName(),
             'nom' => $this->faker->lastName(),
             'prenom' => $this->faker->firstName(),
             'age' => $this->faker->numberBetween(),
